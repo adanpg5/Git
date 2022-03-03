@@ -6,9 +6,16 @@
 * ¿Qué es GitHub?
 > GitHub es un sitio "social coding". Te permite subir repositorios de código para almacenarlo en el sistema de control de versiones Git. Tu puedes colaborar en proyectos de código, y el sistema es código abierto por defecto, lo que significa que cualquiera en el mundo puede encontrar tu código en GitHub, usarlo, aprender de el, y mejorarlo. ¡Tú puedes hacer eso con el código de otras personas tambien!
 
+* [Instalación Windows](#id1)
+* [Instalación Linux](#id2)
+* [Configuración](#id3)
+* [SSH-Keys Windows](#id4)
+* [SSH-Keys Linux](#id5)
+* [Comandos básicos](#id6)
+
 ## Instalación de Git.
 
-* **Para sistemas Windows:**
+* **Para sistemas Windows:**<a name="id1"></a>
 
 Accederemos a https://gitforwindows.org/ y clickaremos en "Download".
 Una vez lo tengamos descargado, procederemos con la instalación.
@@ -32,7 +39,7 @@ Una  vez finalizada la instalación, utilizaremos el programa **Git Bash** que t
 ![4](./img/4.png)
 
 
-* **Para sistemas Linux:**
+* **Para sistemas Linux:**<a name="id2"></a>
 
 Abriremos la consola y, primero actualizaremos los repositorios y posteriormente instalamos Git.
 
@@ -41,7 +48,7 @@ sudo apt-get update
 sudo apt-get install git
 ~~~
 
-## Configuración
+## Configuración<a name="id3"></a>
 
 Ahora iremos a https://github.com/ y nos creamos una cuenta personal.
 Luego, abrimos Git Bash en Windows o la terminal en Linux y ejecutaremos lo siguiente:
@@ -54,7 +61,7 @@ git config --global push.default simple
 
 ## SSH Keys
 
-* **Para sistemas Windows**:
+* **Para sistemas Windows**:<a name="id4"></a>
 
 Abrimos Git Bash e introducimos:
 
@@ -90,7 +97,7 @@ En título, pondremos por ejemplo "SSH Key de nuestro PC." y en KEY copiaremos l
 
 ![5](./img/5.png)
 
-* **Para sistemas Linux**
+* **Para sistemas Linux**<a name="id5"></a>
 
 Abrimos una terminal y ejecutamos:
 ~~~
@@ -111,7 +118,7 @@ En título, pondremos por ejemplo "SSH Key de nuestro PC." y en KEY copiaremos l
 
 ![5](./img/5.png)
 
-## Comandos básicos.
+## Comandos básicos.<a name="id6"></a>
 
 * Para clonar un repositorio, iremos a cualquiera de los que tengamos creados y en `CODE`:
 
@@ -127,4 +134,4 @@ git clone "git@github.com:adanpg5/VirtualBox.git" // Este es el ejemplo de mi re
 * `git commit -m "accion"` - Realizamos el commit añadiendo el comentario de lo que hemos realizado.
 * `git push` - Subimos el archivo a Github.
 * `git pull` - Actualizar la carpeta local según los archivos de Github.
-
+* `git init` - Crea un nuevo repositorio de Git.
